@@ -313,7 +313,7 @@
 		{
 			printOnTerm.printError(printOnTerm.getErrorMessage(err));
 		}
-					CheerpXApp.create({devices:[{type:"block",url:"https://disks.leaningtech.com/webvm_20221004.ext2",name:"block1"}],mounts:[{type:"ext2",dev:"block1",path:"/"},{type:"cheerpOS",dev:"/app",path:"/app"},{type:"cheerpOS",dev:"/str",path:"/data"},{type:"devs",dev:"",path:"/dev"}], networkInterface}).then(runTest, failCallback);
+					CheerpXApp.create({devices:[{type:"block",url:"https://webvm.vercel.app/webvm_20221004.ext2",name:"block1"}],mounts:[{type:"ext2",dev:"block1",path:"/"},{type:"cheerpOS",dev:"/app",path:"/app"},{type:"cheerpOS",dev:"/str",path:"/data"},{type:"devs",dev:"",path:"/dev"}], networkInterface}).then(runTest, failCallback);
 	}
 	function initialMessage()
 	{
@@ -330,7 +330,7 @@
 	var script = document.createElement('script');
 	script.type = 'text/javascript';
 
-	var cxFile = "https://cheerpxdemos.leaningtech.com/publicdeploy/CX_VERSION/cx.js";
+	var cxFile = "https://raw.githubusercontent.com/dylwong/webvm/webcontainer/cx.js";
 	script.src = cxFile;
 	script.addEventListener("load", runBash, false);
 
