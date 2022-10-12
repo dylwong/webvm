@@ -153,10 +153,18 @@
 		getAsciiTitle: function ()
 		{
 			var title = [
-				color + "                        __      __   _  __   ____  __       " + normal,
-				color + "                        \\ \\    / /__| |_\\ \\ / /  \\/  | " + normal,
-				color + "                         \\ \\/\\/ / -_) '_ \\ V /| |\\/| | " + normal,
-				color + "                          \\_/\\_/\\___|_.__/\\_/ |_|  |_|  " + normal,
+				color + "
+▐░░▌     ▐░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌             ▐░▌▐░░▌     ▐░░▌
+▐░▌░▌   ▐░▐░▌ ▀▀▀▀█░█▀▀▀▀ ▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀▀▀  ▐░▌           ▐░▌ ▐░▌░▌   ▐░▐░▌
+▐░▌▐░▌ ▐░▌▐░▌     ▐░▌     ▐░▌          ▐░▌       ▐░▌▐░▌       ▐░▌▐░▌            ▐░▌         ▐░▌  ▐░▌▐░▌ ▐░▌▐░▌
+▐░▌ ▐░▐░▌ ▐░▌     ▐░▌     ▐░▌          ▐░█▄▄▄▄▄▄▄█░▌▐░▌       ▐░▌▐░█▄▄▄▄▄▄▄▄▄    ▐░▌       ▐░▌   ▐░▌ ▐░▐░▌ ▐░▌
+▐░▌  ▐░▌  ▐░▌     ▐░▌     ▐░▌          ▐░░░░░░░░░░░▌▐░▌       ▐░▌▐░░░░░░░░░░░▌    ▐░▌     ▐░▌    ▐░▌  ▐░▌  ▐░▌
+▐░▌   ▀   ▐░▌     ▐░▌     ▐░▌          ▐░█▀▀▀▀█░█▀▀ ▐░▌       ▐░▌▐░█▀▀▀▀▀▀▀▀▀      ▐░▌   ▐░▌     ▐░▌   ▀   ▐░▌
+▐░▌       ▐░▌     ▐░▌     ▐░▌          ▐░▌     ▐░▌  ▐░▌       ▐░▌▐░▌                ▐░▌ ▐░▌      ▐░▌       ▐░▌
+▐░▌       ▐░▌ ▄▄▄▄█░█▄▄▄▄ ▐░█▄▄▄▄▄▄▄▄▄ ▐░▌      ▐░▌ ▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄▄▄        ▐░▐░▌       ▐░▌       ▐░▌
+▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌        ▐░▌        ▐░▌       ▐░▌
+ ▀         ▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀         ▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀          ▀          ▀         ▀ 
+                                                                                                              " + normal,
 
 			];
 			return title;
@@ -164,31 +172,10 @@
 		getAsciiText: function ()
 		{
 			var text = [
-				"+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+",
-				"|                                                                             |",
-				"| WebVM is a server-less virtual Linux environment running fully client-side  |",
-				"| in HTML5/WebAssembly.                                                       |",
-				"|                                                                             |",
-				"| WebVM is powered by the CheerpX virtualization engine, which enables safe,  |",
-				"| sandboxed client-side execution of x86 binaries on any browser.             |",
-				"|                                                                             |",
-				"| CheerpX includes an x86-to-WebAssembly JIT compiler, a virtual block-based  |",
-				"| file system, and a Linux syscall emulator.                                  |",
-				"|                                                                             |",
-				"| [NEW!] WebVM now supports full TCP and UDP networking via Tailscale!        |",
-				"| Click on 'Tailscale Login' to enable it. Read the announcement:             |",
-				"|                                                                             |",
-				"| " + underline + "https://leaningtech.com/webvm-virtual-machine-with-networking-via-tailscale" + normal +" |",
-				"|                                                                             |",
-				"+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+",
+
+				"   This is a full Linux Kernel and OS in the Browser!!",
 				"",
-				"   Welcome to WebVM (build CX_VERSION). If unsure, try these examples:",
-				"",
-				"     python3 examples/python3/fibonacci.py ",
-				"     gcc -o helloworld examples/c/helloworld.c && ./helloworld",
-				"     objdump -d ./helloworld | less -M",
-				"     vim examples/c/helloworld.c",
-				"     curl --max-time 15 parrot.live  # requires networking",
+				"     curl --max-time 15 parrot.live  # make network requests from the browser!",
 				"",
 				];
 			return text;
@@ -288,7 +275,7 @@
 			expectedPrompt: ">",
 			versionOpt: "--version",
 			comment_line: "#",
-			description_line: "The original Bourne Again SHell",
+			description_line: "The new Bash for Web Assemblyl",
 		}
 		if (typeof SharedArrayBuffer === "undefined")
 		{
@@ -337,7 +324,7 @@
 		term.registerLinkMatcher(/https:\/\/leaningtech.com\/webvm-virtual-machine-with-networking-via-tailscale/, function(mouseEvent, matchedString) {
 			window.open(matchedString, "_blank")
 		});
-		console.log("Welcome. We appreciate curiosity, but be warned that keeping the DevTools open causes significant performance degradation and crashes.");
+		console.log("");
 	}
 	initialMessage();
 
