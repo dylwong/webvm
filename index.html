@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>WebVM - Linux virtualization in WebAssembly</title>
 
-    <meta name="description" content="Server-less virtual machine, networking included, running browser-side in HTML5/WebAssembly. Code in any programming language inside this Linux terminal.">
-    <meta name="keywords" content="WebVM, Virtual Machine, CheerpX, x86 virtualization, WebAssembly, Tailscale, JIT">
+    <meta name="description" content="Server-less virtual machine, networking included, running browser-side in purely HTML5/WebAssembly. Run Serverless Workloads for the Edge">
+    <meta name="keywords" content="Web Container">
     <meta property="og:title" content="WebVM - Linux virtualization in WebAssembly" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="WebVM"/>
@@ -13,7 +13,7 @@
     <meta property="og:image" content="https://webvm.io/assets/welcome_to_WebVM_.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@leaningtech" />
-    <meta name="twitter:title" content="WebVM - Linux virtualization in WebAssembly" />
+    <meta name="twitter:title" content="Web Container - Browser containers in WebAssembly" />
     <meta name="twitter:description" content="Server-less virtual machine, networking included, running browser-side in HTML5/WebAssembly. Code in any programming language inside this Linux terminal.">
     <meta name="twitter:image" content="https://webvm.io/assets/welcome_to_WebVM_.png" />
 
@@ -91,7 +91,7 @@
         window.networkInterface.connect = connect;
         window.networkInterface.listen = listen;
         loginElem.style.cursor = "pointer";
-        statusElem.style.color = "white";
+        statusElem.style.color = "aqua";
         loginElem.onclick = () => {
             loginElem.onclick = null;
             statusElem.innerHTML = "Downloading network code...";
@@ -129,7 +129,7 @@
           </li>
           <li style=" margin-right: 50px; height: 100%; display: flex; align-items: center;">
             <a id="loginLink" style="text-decoration: none; cursor:not-allowed;">
-              <div id="networkStatus" style="color: grey; font-family: montserrat; font-weight: 700; font-size: large;">Tailscale Login</div>
+              <div id="networkStatus" style="color: grey; font-family: montserrat; font-weight: 700; font-size: large;">Login</div>
             </a>
           </li>
         </div>
