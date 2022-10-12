@@ -6,7 +6,7 @@
 
     <meta name="description" content="Server-less virtual machine, networking included, running browser-side in purely HTML5/WebAssembly. Run Serverless Workloads for the Edge">
     <meta name="keywords" content="Web Container">
-    <meta property="og:title" content="WebVM - Linux virtualization in WebAssembly" />
+    <meta property="og:title" content="Web Container - Linux Containers in WebAssembly for the Browser" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="WebVM"/>
     <meta property="og:url" content="/">
@@ -49,7 +49,7 @@
         const loginUrlCb = (url) => {
             loginElem.href = url;
             loginElem.target = "_blank";
-            statusElem.innerHTML = "Tailscale Login";
+            statusElem.innerHTML = "Login";
             resolveLogin(url);
         };
         const stateUpdateCb = (state) => {
